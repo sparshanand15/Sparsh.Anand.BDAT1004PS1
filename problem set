@@ -1,0 +1,62 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // a. How many letters are there in 'Supercalifragilisticexpialidocious'?
+        string wordA = "Supercalifragilisticexpialidocious";
+        int letterCount = wordA.Length;
+        Console.WriteLine($"Number of letters in '{wordA}': {letterCount}");
+
+        // b. Does 'Supercalifragilisticexpialidocious' contain 'ice' as a substring?
+        bool containsSubstring = wordA.Contains("ice");
+        Console.WriteLine($"'{wordA}' contains 'ice' as a substring: {containsSubstring}");
+
+        // c. Which of the following words is the longest?
+        string wordB = "Honorificabilitudinitatibus";
+        string wordC = "Bababadalgharaghtakamminarronnkonn";
+
+        string longestWord = wordA;
+        if (wordB.Length > longestWord.Length)
+            longestWord = wordB;
+        if (wordC.Length > longestWord.Length)
+            longestWord = wordC;
+
+        Console.WriteLine($"The longest word among the three is: {longestWord}");
+
+        // d. Sorting the composer names
+        string[] composers = { "Berlioz", "Borodin", "Brian", "Bartok", "Bellini", "Buxtehude", "Bernstein" };
+        Array.Sort(composers);
+
+        Console.WriteLine($"First composer in the dictionary: {composers[0]}");
+        Console.WriteLine($"Last composer in the dictionary: {composers[composers.Length - 1]}");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
